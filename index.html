@@ -3,116 +3,187 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
-  <body>
-
-    <header>
-
+  
+<body>
+  <!-- Inicio do HEADER -->
+  <header>
+      <!-- 1º divisão do header -->
       <div>
-        <img src="imagens/" alt="IMAGEM LOGO">
+          <img src="img/pinguim.png" alt="IMAGEM LOGO">
       </div>
-
+      <!-- 2º divisão do header -->
       <div>
 
-        <nav>
+          <nav>
 
-          <ul>
+              <ul>
 
-            <li>
-              <a href>HOME</a>
-            </li>
+                  <li>
+                      <a href>HOME</a>
+                  </li>
 
-            <li>
-              <a href>HOME</a>
-            </li>
+                  <li>
+                      <a href>HOME</a>
+                  </li>
 
-            <li>
-              <a href>HOME</a>
-            </li>
+                  <li>
+                      <a href>HOME</a>
+                  </li>
 
-            <li>
-              <a href>HOME</a>
-            </li>
+                  <li>
+                      <a href>HOME</a>
+                  </li>
 
-          </ul>
+              </ul>
 
-        </nav>
+          </nav>
 
       </div>
-    </header>
+  </header>
+  <!-- fim do header -->
 
-    <div>
 
+  <!-- DIV pai, que está abraçando os dois itens (video e caixa de texto) -->
+  <div>
+      <!-- DIV para armazenar o Vídeo -->
       <div>
-        <video autoplay muted loop id="myVideo" >
-          <source src="videos/122965-726547934_tiny.mp4" type="video/mp4">
+          <video autoplay muted loop id="myVideo">
+              <source src="Videos/209409_tiny.mp4" type="video/mp4">
 
-        </video>
+          </video>
       </div>
-
+      <!-- DIV para armazenar o título, paragrafo e botão -->
       <div class="content">
-        <h1>Heading</h1>
-        <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat
-          phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum
-          maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore
-          latine molestiae, ad mutat oblique delicatissimi pro.</p>
-
-        <button id="myBtn" onclick="myFunction()">Pause</button>
+          <h1>Heading</h1>
+          <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat
+              phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum
+              maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore
+              latine molestiae, ad mutat oblique delicatissimi pro.</p>
+          <!-- Botão está recebendo e executando uma função do JavaScript -->
+          <button id="myBtn" onclick="myFunction()">Pause</button>
 
       </div>
 
-    </div>
-
-    <section class="sessao1">
-
+  </div>
+  <!-- sessão para inserir meus 3 parágrafos -->
+  <section class="sessao1">
+      <!-- Cada DIV existe uma Tag de Parágrafo -->
       <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-          maxime nemo eos ea ducimus labore et ut consectetur commodi
-          consequatur. Sequi ratione, dignissimos illum numquam impedit omnis.
-          Libero, voluptatibus sed?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              maxime nemo eos ea ducimus labore et ut consectetur commodi
+              consequatur. Sequi ratione, dignissimos illum numquam impedit omnis.
+              Libero, voluptatibus sed?</p>
       </div>
-
+      <!-- Cada DIV existe uma Tag de Parágrafo -->
       <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-          maxime nemo eos ea ducimus labore et ut consectetur commodi
-          consequatur. Sequi ratione, dignissimos illum numquam impedit omnis.
-          Libero, voluptatibus sed?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              maxime nemo eos ea ducimus labore et ut consectetur commodi
+              consequatur. Sequi ratione, dignissimos illum numquam impedit omnis.
+              Libero, voluptatibus sed?</p>
       </div>
-
+      <!-- Cada DIV existe uma Tag de Parágrafo -->
       <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-          maxime nemo eos ea ducimus labore et ut consectetur commodi
-          consequatur. Sequi ratione, dignissimos illum numquam impedit omnis.
-          Libero, voluptatibus sed?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              maxime nemo eos ea ducimus labore et ut consectetur commodi
+              consequatur. Sequi ratione, dignissimos illum numquam impedit omnis.
+              Libero, voluptatibus sed?</p>
       </div>
-    </section>
+  </section>
+
+  <div id="papai">
+      <div class="divas efeito-img-topo">
+          1
+      </div>
+      <div class="divas efeito-img-topo">
+          2
+      </div>
+      <div class="divas efeito-img-topo">
+          3
+      </div>
+  </div>
 
 
-    <div id="papai">
-        <div class="divas">
-            1
-        </div>
-        <div class="divas">
-            2
-        </div>
-        <div class="divas">
-           3
-        </div>
-    </div>
 
-    
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
+  <section>
+      <div id="divForm">
+          <h2>FORMULARIO DE PARTICIPAÇÃO</h2>
+          <form>
+              <label for="nome">Nome</label>
+              <input type="text" placeholder="Insira seu nome completo" required>
+              <br> <br>
+              <label for="email">Email</label>
+              <input type="email" placeholder="Exemplo@email.com" required>
+              <br><br>
+              <label for="telefone">Tel:</label>
+              <input type="number" placeholder="(11)99999-9999" required>
+              <br><br>
+              <textarea name="" id="comentario" cols="30" rows="10"
+                  placeholder="Descreva sua expecialidade"></textarea>
+              <br><br>
+              <input type="submit" value="Participar">
+              <input type="reset" value="Limpar">
+          </form>
+      </div>
+
+      <div id="divMap">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d29267.273310162152!2d-46.474726320690316!3d-23.51778169384985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d-23.531462599999998!2d-46.4507304!4m5!1s0x94ce61b3fea53a67%3A0x3e3a4aab25d8e279!2sCOHAB%20juscelino%20-%20Av.%20Ten.%20Laudelino%20F.do%20Amaral%20-%20Vila%20Jacu%C3%AD%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008060-060!3m2!1d-23.5024883!2d-46.453296099999996!5e0!3m2!1spt-BR!2sbr!4v1714782598427!5m2!1spt-BR!2sbr"
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </section>
+
+
+
+  <footer>
+      <div id="divFpai">
+          <div>
+              <h2>Sobre nós</h2>
+
+              <p>
+                  Somos uma empresa de IA líder, transformando ideias em realidade para um futuro mais inteligente.
+              </p>
+          </div>
+          <div>
+              <h2>Contatos</h2>
+              <p>
+                  EMAIL:
+                  <a href="">Exemplo@Email.com</a>
+              </p>
+              <p>
+                  Tel:
+                  <a href="">(11)99999-9999</a>
+              </p>
+          </div>
+          <div>
+              <a href="">Politica de Privacidade</a>
+          </div>
+      </div>
+
+      <p>&copy; Todos os direitos reservados | isso ae</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+  <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
           <div class="vw-plugin-top-wrapper"></div>
-        </div>
       </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d29261.169839457685!2d-46.468449820618105!3d-23.545223200848238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d-23.531462599999998!2d-46.4507304!4m5!1s0x94ce667f08539d79%3A0xf6d6340588521583!2sR.%20%C3%82ngelo%20Laporte%20-%20Col%C3%B4nia%20(Zona%20Leste)%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008260-300!3m2!1d-23.5597745!2d-46.4410477!5e0!3m2!1spt-BR!2sbr!4v1714782810304!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<script src="script.js"></script>
-  </body>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
 </html>
