@@ -1,17 +1,16 @@
 * {
   box-sizing: border-box;
-  /*terá explicação*/
   list-style: none;
 }
 
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 17px;
 }
 
 div img {
-  width: 5rem;
+  width: 13rem;
   height: auto;
   margin-left: 1rem;
 }
@@ -37,15 +36,12 @@ header ul li {
 
 #myVideo {
   position: static;
-  /*fixed*/
-  /*terá explicação*/
   min-width: 100%;
   min-height: 100%;
 }
 
 .content {
   position: absolute;
-  /*terá explicação*/
   margin-top: -40vh;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
